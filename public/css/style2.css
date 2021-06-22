@@ -151,7 +151,6 @@
     position: relative;
     padding-top: 45px;
     padding: 50px 50px 50px;
-    -webkit-box-shadow: 0 25px 40px 0 rgb(0 0 0 / 10%);
     box-shadow: 0 25px 40px 0 rgb(0 0 0 / 10%);
     background: #fff;
     border-radius: 5px;
@@ -392,10 +391,6 @@ html{
     margin-top: 15px;
 }
 .loader img{
-    -webkit-animation:spin 2s linear infinite;
-    -moz-animation:spin 2s linear infinite;
     animation:spin 2s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin { 100% { transform: rotate(360deg); transform:rotate(360deg); } }
