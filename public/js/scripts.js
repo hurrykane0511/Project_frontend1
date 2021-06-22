@@ -126,17 +126,17 @@ let i = 0;
 (async function slowDemo () {
     for (i = 0; i < 50; i++) {
         await sleep(20);
-        loading.textContent = 'loading:'+i+'%'; 
+        loading.textContent = " "+i+'%'; 
     }
     await sleep(2000);
     for (i; i <= 75; i++) {
         await sleep(20);
-        loading.textContent = 'loading:'+i+'%'; 
+        loading.textContent = " "+i+'%'; 
     }
     await sleep(2000);
     for (i; i < 100 ; i++) {
         await sleep(20);
-        loading.textContent = 'loading:'+i+'%'; 
+        loading.textContent = " "+i+'%'; 
     }
 })();
 const myCarousel = document.querySelector('.slider-ct11 .slider');

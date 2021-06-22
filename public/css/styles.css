@@ -148,6 +148,7 @@ a.play i{
         0 0 0 30px rgb(255, 255, 255);
     }
 }
+
 /* SILIDER-CAROUSEL-OF-BANNER */
 /* CONTENT-1 */
 .content-1 .container{
@@ -175,7 +176,6 @@ a.play i{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    
 }
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
@@ -445,6 +445,13 @@ a.play i{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
 }
+.a h4{
+    color: #3676e1;
+    font-weight: 400;
+}
+.headasdasd{
+    border-left: 1px solid #a4c2f3 ;
+}
 /* Content-11 */
 
 .header-ct11{
@@ -526,6 +533,9 @@ a.play i{
     background-position: center;
     background-size: cover;
 }
+.ct9-div, .ct9-div h4, .ct9-div h2, .ct9-div input{
+    z-index: 99999 !important;
+}
 .ct9-div h4{
     letter-spacing: 10px;
 }
@@ -550,7 +560,7 @@ a.play i{
     top: 28px;
     height: 270px;
     width: 270px;
-    z-index: 99;
+    z-index: 0;
     opacity: 0.6;
     animation: upandown 5s linear infinite;
 }
@@ -828,9 +838,13 @@ footer .container-lg{
         height: 30px !important;
         width: 30px !important;
     }
+    .headasdasd{
+        border: none !important;
+    }
 }
 @media screen and (max-width: 600px) 
 {
+
     .items-ct11{
         box-sizing: content-box;
         height: 378px;
