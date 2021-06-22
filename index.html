@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/screen.css">
+    <link rel="stylesheet" href="public/css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="loading">
+   <div class="loader">
+      <img src="public/img/loader.png" alt="error">
+     <h3>loading: 0%</h3>
+   </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <header>
+        <!-- HEADER TOP -->
+        <div class="header-1 d-none d-lg-block py-1">
+            <div class="container-sm">
+                <div class="row">
+                  <!-- TOP LEFT -->
+                  <div class="col-lg-8">
+                    <div class="header-1-left">
+                      <p class="address mb-0">						
+                        <a href="#"><i class="fas fa-envelope-square"></i> example@gmail.com</a>
+          
+                        <span><i class="fa fa-map-marker pe-2 ps-3"></i>24/5, 1st Floor, Kurigram</span>
+          
+                        <a href="#"><i class="fa fa-phone pe-2 ps-3"></i>+ (1800) 456 7890</a> 
+                      </p>
+                    </div>
+                  </div>
+                  <!-- TOP RIGHT -->
+                  <div class="col-lg-4">
+                    <div class="header-1-right">
+                      <ul class="d-flex mb-0 justify-content-end">
+                        <li><a href="#"><i class="fab fa-facebook-f pe-3"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter pe-3"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square pe-3"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in pe-3"></i></a></li>		
+                      </ul> 
+                    </div>						
+                  </div>	
+                </div>
+            </div>
+        </div>
+        <div class="header1-mb py-4 text-center d-lg-none">
+            <a href="#"><img src="public/img/logo1.png" alt=""></a>
+        </div>
+        <!-- HEADER NAV -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 d-lg-none">
+            <div class="container">
+              <a class="navbar-brand" href="#">Techno</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navrrqw" aria-controls="navrrqw" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse bg-white" id="navrrqw" >
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Company <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Services <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          IT Solution <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Blog <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contact <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg py-4 d-none d-lg-block ">
+            <div class="container">
+              <a class="navbar-brand ds" href="#"><img src="public/img/logo1.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto ds">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Company <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Services <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          IT Solution <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Blog <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contact <span><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Homepage main</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Two</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Three</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Four</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Five</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Six</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Seven</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Eight</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Nine</a></li>
+                          <li><a class="dropdown-item" href="#">Homepage Ten</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page One</a></li>
+                          <li><a class="dropdown-item" href="#">Landing page Two</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fas fa-search search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hidden-arrow"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-mdb-toggle="dropdown"
+                        aria-expanded="false">
+                            <i class="fas fa-shopping-cart search"></i><span class="badge bg-dark position-relative">0</span>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <div class="slider-main">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
+            <div class="carousel-inner ct1">
+              <div class="carousel-item active banner-img"
+              style="background-image: url(./public/img/sld1.jpg);"
+              >
+                <div class="banner-caption">
+                   <h5>Total IT Solution Here</h5>
+                   <h1>Best IT solution agency</h1>
+                    <h1>for your Business</h1>
+                    <button class="btn btn1">How IT Work <i class="fa fa-angle-right"></i></button>
+                    <button class="btn btn2 ms-4">IT Services <i class="fa fa-angle-right"></i></button>
+                    
+                </div>
+                <a href="#" class="play"><i class="far fa-play-circle"></i></a>
+              </div>
+              <div class="carousel-item banner-img"
+              style="background-image: url(./public/img/1.png);">
+                <div class="banner-caption">
+                    <h5>Total IT Solution Here</h5>
+                    <h1>Best IT solution agency</h1>
+                     <h1>for your Business</h1>
+                     <button class="btn btn1">How IT Work <i class="fa fa-angle-right"></i></button>
+                     <button class="btn btn2 ms-4">IT Services <i class="fa fa-angle-right"></i></button>
+                     
+                </div>
+                <a href="#" class="play"><i class="far fa-play-circle"></i></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev content1 banner-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon border border-1 border-white rounded-circle p-4" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next content1 banner-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon  border border-1 border-white rounded-circle p-4" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="content-1">
+      <div class="container px-3">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <i class="fas fa-globe"></i>
+              <h5>Provide All Kind Of IT Services</h5>
+            </div>
+            <div class="flip-box-back">
+              <h5>Provide All Kind Of IT Services</h5>
+              <p>Whether bringing new amazing products and services to market</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <h5>Solution For All IT Security</h5>
+            </div>
+            <div class="flip-box-back">
+              <h5>Solution For All IT Security</h5>
+              <p>Whether bringing new amazing products and services to market</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <i class="fas fa-headset"></i>
+              <h5>All IT Consultancy Solution</h5>
+            </div>
+            <div class="flip-box-back">
+             <h5>All IT Consultancy Solution</h5>
+              <p>Whether bringing new amazing products and services to market</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <i class="fas fa-user-friends"></i>
+                <h5>Provide All Kind Of IT Services</h5>
+            </div>
+            <div class="flip-box-back">
+              <h5>Provide All Kind Of IT Services</h5>
+              <p>Whether bringing new amazing products and services to market</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="content-2 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 my-5">
+            <div class="content-2-img">
+              <img src="public/img/circle.png" alt="">
+              <img src="public/img/about-img.png" alt="">
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="content-2-text my-2">
+              <h5>30 YEARS OF EXPERIENCE</h5>
+              <input type="range">
+              <h2>Preparing For Your Success
+                Provide Best IT Solutions.</h2>
+              <p>We are privileged to work with hundred future-thinking awesome businesses including many of the world’s top hardware</p>
+                <div class="span">
+                  <i class="fas fa-cog"></i>
+                  <div>
+                    <h5 style="color: black;"> Warranty Management</h5>
+                    <p>Morem Ipsum is simply dummy text of the printing and pepesetting found.</p>
+                  </div>
+                </div>
+               
+                <div class="span">
+                  <i class="fas fa-desktop"></i>
+                  <div>
+                    <h5 style="color: black;"> Quality Control System</h5> 
+                    <p>Morem Ipsum is simply dummy text of the printing and pepesetting found.</p>
+                  </div>
+                </div>
+               
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-3 justify-content-center align-items-center d-flex py-5">
+      <div class="bg-img ">
+        <div class="container text-center text-white">
+          <h5>S E R V I C E S</h5>
+          <h2>Provide Exclusive Services</h2>
+          <input style="font-size: large; cursor: pointer;" type="range">
+          <div class="row">
+            <div class="col-lg-4"><div class="content3-item m-3"><i class="fas fa-volume-up"></i><h5>Marketing Strategy</h5><p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p></div></div>           
+            <div class="col-lg-4"><div class="content3-item m-3"><i class="fas fa-mug-hot"></i><h5>Interior Design</h5><p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p></div></div>        
+            <div class="col-lg-4"><div class="content3-item m-3"><i class="fas fa-expand"></i><h5>Digital Services</h5><p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p></div></div>       
+          </div>
+          <div class="row">
+            <div class="col-lg-4"><div class="content3-item m-3"><i class="fas fa-briefcase"></i><h5>Product Selling</h5><p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p></div></div>
+            <div class="col-lg-4"><div class="content3-item m-3"><i class="fas fa-pencil-alt"></i><h5>Product Design</h5><p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p></div></div>
+            <div class="col-lg-4"><div class="content3-item m-3"><i class="fab fa-skype"></i><h5>Social Marketing </h5><p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-4">
+      <div class="bg-content4">
+          <div class="container py-5">
+            <div class="content4-top d-flex">
+              <div class="content4-text">
+                <h5>T E A M M E M B E R</h5>
+                <h1>Our Awesome Creative</h1>
+                  <h1>Team Member</h1>
+                <input type="range" style="cursor: pointer;">
+              </div>
+              <button class="btn text-white ms-auto my-auto d-none d-lg-block d-sm-block">Join Out Team</button>
+            </div>
+            <div class="content4-img pt-5 d-xl-none">
+              <div class="row text-center">
+                <div class="col-lg-6 ">
+                  <div class="profile m-auto">
+                    <img src="public/img/team4.jpg" alt="">
+                    <h4>David Malaan</h4>
+                    <p>CEO</p>
+                  </div>                 
+                </div>
+                <div class="col-lg-6">
+                  <div class="profile m-auto">
+                    <img src="public/img/team5.jpg" alt="">
+                    <h4>Andres Jhohne</h4>
+                    <p>DIRECTOR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="profile m-auto">
+                    <img src="public/img/team6.jpg" alt="">
+                    <h4>Michel Balak</h4>
+                    <p>FOUNDER</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="profile m-auto">
+                    <img src="public/img/team7.jpg" alt="">
+                    <h4>Jemes Rodrigez</h4>
+                    <p>MANAGER</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content4-img pt-5 d-flex justify-content-center align-items-center content-4-desktop">
+              <div class="profile">
+                <img src="public/img/team4.jpg" alt="">
+                <h4>David Malaan</h4>
+                <p>CEO</p>
+              </div>
+              <div class="profile">
+                <img src="public/img/team5.jpg" alt="">
+                <h4>Andres Jhohne</h4>
+                <p>DIRECTOR</p>
+              </div>
+              <div class="profile">
+                <img src="public/img/team6.jpg" alt="">
+                <h4>Michel Balak</h4>
+                <p>FOUNDER</p>
+              </div>
+              <div class="profile">
+                <img src="public/img/team7.jpg" alt="">
+                <h4>Jemes Rodrigez</h4>
+                <p>MANAGER</p>
+              </div>
+            </div>
+          </div>
+          <div class="circle2">
+            <img src="public/img/circle.png" alt="">
+          </div>
+      </div>
+    </div>
+    <div class="content-5 d-flex justify-content-center align-items-center">
+      <div class="text-content5 text-center">
+        <h5>FEATURES CASE</h5>
+        <h2>Our Latest Case Study</h2>
+        <h2>For Your Business</h2>
+        <input type="range" style="cursor: pointer;">
+      </div>
+    </div>
+    <div class="content-6">
+      <div class="container-fluid text-center p-0">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide ct6 p-0 m-0" data-bs-touch="true"
+             data-bs-interval="5000" data-bs-ride="carousel" >
+                <div class="carousel-inner content6-slider" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="public/img/case1.jpg" alt="error" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                  <img src="public/img/case2.jpg" alt="error" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                  <img src="public/img/case3.jpg" alt="error" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                  <img src="public/img/case4.jpg" alt="error" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                  <img src="public/img/case5.jpg" alt="error" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                  <img src="public/img/case7.jpg" alt="error" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent visually-hidden" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent visually-hidden" href="#recipeCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-7 text-center">
+      <button id="choosing-7" class="rounded-pill" disabled></button>
+      <button id="notchoose-7"  class="rounded-pill" ></button>
+    </div>
+    <div class="content-8 text-center">
+      <h5>PROCESS</h5>
+      <h2>Our Working Process</h2>
+      <div id="ct8-tag"></div>
+      <input type="range" style="cursor: pointer;">
+      <div class="container my-5">
+        <div class="row ct8">
+          <div class="col-lg-4">
+            <div class="number-shadow">1</div>
+            <div class="ct8-text">
+              <h4>Select A Project</h4>
+              <p>We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="number-shadow">2</div>
+            <div class="ct8-text">
+              <h4>Project Analysis</h4>
+              <p>We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="number-shadow">3</div>
+            <div class="ct8-text">
+              <h4>Deliver Result</h4>
+              <p>We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-9 d-flex justify-content-center align-items-center">
+      <div class="container-lg text-white">
+       <div class="row">
+        <div class="col-lg-6 ">
+          <h4>+880 013 143 206</h4>
+          <h2>To make requests for the further information</h2>
+          <button class="btn-ct9 my-5">Join with now <i class="fa fa-angle-right"></i></button>
+        </div>
+        <div class="col-lg-6 align-items-center justify-content-center d-flex">
+          <div class="box-items">
+           <a href="#"><i class="fas fa-play"></i></a>
+          </div>
+        </div>
+      </div>
+       </div>
+    </div>
+    <div class="content-10">
+      <div class="container-lg text-center justify-content-center align-self-center py-4">
+          <div class="row">
+            <div class="col-lg-3 my-5 headasdasd"><h1>15 K</h1><h4>Happy Clients</h4></div>
+            <div class="col-lg-3 my-5 headasdasd border-1 border-start border-end"><h1>1280 +</h1><h4>Account Number</h4></div>
+            <div class="col-lg-3 my-5 headasdasd border-1 border-start border-end"><h1>10 K</h1><h4>Finished Projects</h4></div>
+            <div class="col-lg-3 my-5 headasdasd"><h1>992 +</h1><h4>992 +</h4></div>
+          </div>
+      </div>
+    </div>
+    <div class="content-11 text-center">
+      <div class="header-ct11 text-center">
+        <h4>TESTIMONIAL</h4>
+        <h2>What Says
+          Our Happy Clients</h2>
+          <input type="range">
+      </div>
+      <div class="slider-ct11">
+        <div class="container slider px-0  d-flex">
+          <section>
+            <div class="items-ct11">
+              <div class="chat-box">
+                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>											
+              </div>
+              <div class="ct11 d-flex align-items-center py-4">  
+                <img src="./public/img/testi1.jpg" alt="error" class="img-fluid rounded-circle">
+                <div class="tittle">
+                  <h2>Jamal Vuiyan</h2>
+                  <span>Founder</span>
+                </div>           
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="items-ct11">
+              <div class="chat-box">
+                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>
+              </div>
+              <div class="ct11 d-flex align-items-center py-4">
+                <img src="./public/img/testi2.jpg" alt="error" class="img-fluid rounded-circle">
+                <div class="tittle">
+                  <h2>Abraham Jhone</h2>
+                  <span>IT Manager</span>
+                </div>              
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="items-ct11">
+              <div class="chat-box">
+                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>               
+              </div>
+              <div class="ct11 d-flex align-items-center py-4">
+                <img src="./public/img/testi3.jpg" alt="error" class="img-fluid rounded-circle">
+                <div class="tittle">
+                  <h2>Fatima Jahra </h2>
+                  <span>Developer</span>
+                </div>    
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="items-ct11">
+              <div class="chat-box">
+                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>
+              </div>
+              <div class="ct11 d-flex align-items-center py-4">
+                <img src="./public/img/testi1.jpg" alt="error" class="img-fluid rounded-circle">
+                <div class="tittle">
+                  <h2>Jamal Vuiyan </h2>
+                  <span>Founder</span>
+                </div>    
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="items-ct11">
+              <div class="chat-box">
+                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>
+              </div>
+              <div class="ct11 d-flex align-items-center py-4">
+                <img src="./public/img/testi1.jpg" alt="error" class="img-fluid rounded-circle">
+                <div class="tittle">
+                  <h2>Jamal Vuiyan </h2>
+                  <span>Founder</span>
+                </div>      
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="btn11 pb-5">
+        <button class="pre rounded-pill border-2"></button>
+        <button class="next rounded-pill border-2"></button>
+      </div>
+    </div>
+    <div class="content-12 text-center">
+      <div class="circle"></div>
+      <div class="ct9-div py-5 text-white">
+        
+        <h4>GET QUOTE</h4>
+        <h2>Make An</h2>
+        <h2>Free Consultant</h2>
+        <input type="range">
+      </div>
+      <div class="container form1">
+        <form action="#" method="GET" id="form12" novalidate>
+          <div class="row form">
+            <div class="col-lg-6">
+              <label for="Name" class="form-label"></label>
+              <input type="text" name="name" required pattern="[A-Z][a-z]+(?: [A-Z][a-z]+)+" id="Name" placeholder="Name" class="form-control py-3 mb-5 ip">
+            </div>
+            <div class="col-lg-6">
+              <label for="Email" class="form-label"></label>
+              <input type="text" name="email" required pattern="(?=.*\d)[a-z]+(?:[_.-][a-zA-Z0-9]+)*@\w{2,}(?:\.\w{2,})+" placeholder="Email" id="Email" class="form-control py-3 mb-5 ip">
+            </div>
+          </div>
+          <div class="row form">
+            <div class="col-lg-6">
+              <label for="Phone" class="form-label"></label>
+              <input type="text" name="phone" id="Phone" required pattern="0[0-9]{9,10}" placeholder="Phone" class="form-control py-3 mb-5 ip">
+            </div>
+            <div class="col-lg-6">
+              <label for="Website" class="form-label"></label>
+              <input type="text" name="website" id="Website" required pattern="\w+(?:\.\w+)+" placeholder="Website" class="form-control py-3 mb-5 ip">
+            </div>
+          </div>
+          <div class="row form">
+            <div class="col-lg-12">
+              <label for="messenger" class="form-label"></label>
+              <textarea class="form-control mb-3 ip" maxlength="500" id="messenger" placeholder="Your messenger" rows="5"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-ct9 my-5">Free Consultancy</button>
+        </form>
+      </div>
+      <div class="peace"></div>
+    </div>
+    <div class="content-13">
+      <div class="container-lg">
+        <div class="ct13-head py-5">
+          <div class="text ">
+            <h5>LATEST ARTICLE</h5>
+            <h1>See Our Latest<br>
+              Blog Posts</h1>
+          </div>
+          <button class="ms-auto btn-ct13">See All Blogs</button>
+        </div>
+        <div class="contain d-flex align-items-center">
+          <button class="left"><i class="fas fa-arrow-left"></i></button>
+          <div class="slider-ct13">
+            <section>
+              <div class="img">
+                <img src="public/img/blog-2-390x290.jpg" alt="error">
+              </div>
+              <div class="infor-ct13">
+                  <p> Techno | December 4, 2018</p>
+                  <a href="#"><h3>Tiktok Illegally collecting data sharing</h3></a>
+                  <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.</p>
+                  <p><a href="#">Read more <i class="fa fa-angle-right"></i></a></p>
+            </div>
+            </section>
+            <section>
+              <div class="img">
+                <img src="public/img/blog1-390x290.jpg" alt="error">
+              </div>
+              <div class="infor-ct13">
+                <p> Techno | December 4, 2018</p>
+               <a href="#"><h3>How can use our latest news by techno</h3></a>
+                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
+                <p><a href="#">Read more <i class="fa fa-angle-right"></i></a></p>
+            </div>
+            </section>
+            <section>
+              <div class="img">
+                <img src="public/img/blog01-390x290.jpg" alt="">
+              </div>
+              <div class="infor-ct13">
+                <p> Techno | December 4, 2018</p>
+               <a href="#"><h3>How can use our latest news by techno</h3></a>
+                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
+                <p><a href="#">Read more <i class="fa fa-angle-right"></i></a></p>
+            </div>
+            </section>
+            <section>
+              <div class="img">
+                <img src="public/img/blog01-390x290.jpg" alt="error">
+              </div>
+              <div class="infor-ct13">
+                <p> Techno | December 4, 2018</p>
+                <a href="#"><h3>Tiktok Illegally collecting data sharing</h3></a>
+                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
+                <p><a href="#">Read more <i class="fa fa-angle-right"></i></a></p>
+            </div>
+            </section>
+            <section>
+              <div class="img">
+                <img src="public/img/blog-2-390x290.jpg" alt="error">
+              </div>
+              <div class="infor-ct13">
+                <p> Techno | December 4, 2018</p>
+                <a href="#"><h3>How to learn PHP 10 tips to get you started</h3></a>
+                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
+                <p><a href="#">Read more <i class="fa fa-angle-right"></i></a></p>
+            </div>
+            </section>
+            <section>
+              <div class="img">
+                <img src="public/img/blog1-390x290.jpg" alt="error">
+              </div>
+              <div class="infor-ct13">
+                <p> Techno | December 4, 2018</p>
+                <a href="#"><h3>The five devices you need to work anytime</h3></a>
+                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
+                <p><a href="#">Read more <i class="fa fa-angle-right"></i></a></p>
+            </div>
+            </section>
+            <section>
+              <div class="img">
+                <img src="public/img/blog-2-390x290.jpg" alt="error">
+              </div>
+              <div class="infor-ct13">
+                <p> Techno | December 4, 2018</p>
+                <a href="#"><h3>Where and how to watch live stream today</h3></a>
+                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
+                <p><a href="#">Read more <i class="fa fa-angle-right"></i></a></p>
+            </div>
+            </section>
+          </div>
+          <button class="right"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="controller text-center my-5">
+          <button class="rounded-pill" id="choosing13"></button>
+          <button class="rounded-pill"></button>
+          <button class="rounded-pill"></button>
+        </div>
+      </div>
+    </div>
+    <div class="last-content d-flex align-items-center justify-content-center">
+      <div class="container text-white text-center">
+        <h2 class="mb-5">Subscribe Our Newsletter</h2>
+        <form action="#" class="form-control last-form d-flex m-auto" novalidate>
+            <label for="Email"></label>
+            <input type="text" placeholder="Enter your email*" required pattern="\w+@\w+" name="Email" class="form-control">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+        <div class="container-lg pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-3">
+                
+                    <ul class="style-list">
+                      <li>  <a href="#top"><img src="public/img/logo2.png" alt=""></a></li>
+                      <li>
+                        <p >Condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus.</p>
+                      </li>
+                      <li>
+                        <a class="Social-icon" href="#">Follow Us</a>
+                        <a class="Social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="Social-icon" href="#" ><i class="fab fa-twitter"></i></a>
+                        <a class="Social-icon" href="#" ><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                  
+                  <ul class="style-list">
+                    <li><h3>Our Services</h3></li>
+                    <li><span>-</span><a class="a1" href="#top">Interior Design</a></li>
+                    <li><span>-</span><a class="a1" href="#top">Marketing Strategy</a></li>
+                    <li><span>-</span><a class="a1" href="#top">Digital Services</a></li>
+                    <li><span>-</span><a class="a1" href="#top">Product Selling</a></li>
+                    <li><span>-</span><a class="a1" href="#top">Product Design</a></li>
+                    <li><span>-</span><a class="a1" href="#top">Social Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  
+                  <ul class="style-list">
+                    <li><h3>Company Address</h3></li>
+                    <li><p>Porem awesome dolor sitework amet, consetur acing elit, sed do eiusmod ligal</p></li>
+                    <li><p><span style="font-weight: 600;">Address:</span> 54/1 New dhas sorini Asut, Melbord Austria.</p></li>
+                    <li><p><span style="font-weight: 600;">Phone:</span> 54786547521</p></li>
+                    <li><p><span style="font-weight: 600;">Email:</span> demo@example.com</p></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <ul class="style-list">
+                        <li><h3>Popular Posts</h3></li>
+                        <li>
+                            <div class="someaw d-flex">
+                                <a href="#"><img src="public/img/f.jpg" alt=""></a>
+                              <div class="px-1"><a class="a1" href="#">Tiktok Illegally collecting data sharing</a><p style="font-size: small;">December 4, 2018</p></div>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <div class="someaw d-flex">
+                                <a href="#"><img src="public/img/f.jpg" alt=""></a>
+                                <div class="px-1">
+                                  <a class="a1" href="#">Tiktok Illegally collecting data sharing</a><p style="font-size: small;">December 4, 2018</p>
+                                </div>
+                            </div>
+                        </li>
+                  </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row d-lg-none text-center">
+              <p>&copy;Nguyễn Thái Sơn 20211tt0615</p>
+              <p><a href="#" class="a1 px-3">Terms & Condition</a></p>
+              <p><a href="#" class="a1 px-3">Privacy Policy</a></p>
+              <p><a href="#" class="a1 px-3">Contact Us</a></p> 
+            </div>
+            <div class="row">
+                <div class="col-lg-6 d-none d-lg-block">
+                  &copy;Nguyễn Thái Sơn 20211tt0615
+                </div>
+                <div class="col-lg-6 d-none d-lg-block text-end">
+                  <p>
+                    <a href="#" class="a1 px-3">Terms & Condition</a>
+                    <a href="#" class="a1 px-3">Privacy Policy</a>
+                    <a href="#" class="a1 px-3">Contact Us</a>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="public/js/myCarousel.js"></script>
+    <script src="public/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
