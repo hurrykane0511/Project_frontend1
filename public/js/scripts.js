@@ -72,11 +72,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    mybutton.classList.add('opacity');
-  } else {
-    mybutton.style.display = "none";
+
     mybutton.classList.remove('opacity');
+  } else {
+
+    mybutton.classList.add('opacity');
   }
 }
 
