@@ -201,6 +201,8 @@ let setwidth2 = () => {
     }
     else{
         sliderct13.style.width = it13[0].offsetWidth+ +'px';
+        it13[0].removeAttribute('style','margin-left: 0px');
+        it13[it13.length-1].removeAttribute('style','margin-right: 0px');
     }
 }
 
@@ -243,9 +245,9 @@ btn_controller[0].onclick = () =>{
     })
 }
 btn_controller[1].onclick = () =>{
-    sliderct13.scrollBy({
+    sliderct13.scrollTo({
         top: 0,
-        left: (it13.length*it13[0].offsetWidth)/2,
+        left: ((it13.length-1)*it13[0].offsetWidth)/3,
         behavior: 'smooth'
     })
 }
@@ -255,4 +257,86 @@ btn_controller[2].onclick = () =>{
         left: it13.length*it13[0].offsetWidth,
         behavior: 'smooth'
     })
+}
+
+// Detect request animation frame
+let scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+let elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+}
+loop()
+let tranUp = document.querySelectorAll('.scroll-on-up')
+function tranToUp() {
+
+    Array.prototype.forEach.call(tranUp, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.remove('tranUp');
+        sleep(1000);
+      } else {
+        element.classList.add('tranUp');
+      }
+    });
+
+    scroll(tranToUp);
+}
+tranToUp();
+
+let tranLeft = document.querySelectorAll('.scroll-on-left')
+function tranToLeft() {
+
+    Array.prototype.forEach.call(tranLeft, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.remove('tranLeft');
+        sleep(1000);
+      } else {
+        element.classList.add('tranLeft');
+      }
+    });
+    scroll(tranToLeft);
+}
+tranToLeft();
+
+let tranRight = document.querySelectorAll('.scroll-on-right')
+function tranToRight() {
+
+    Array.prototype.forEach.call(tranRight, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.remove('tranRight');
+        sleep(1000);
+      } else {
+        element.classList.add('tranRight');
+      }
+    });
+    scroll(tranToRight);
+}
+tranToRight();
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  let rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
 }

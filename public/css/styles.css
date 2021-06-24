@@ -541,6 +541,17 @@ a.play i{
 .ct9-div h4{
     letter-spacing: 10px;
 }
+button.btn-ct9{
+    background: #fff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.25s linear;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 999;
+}
 a.btn-ct9{
     background: #fff;
     color: #000000;
