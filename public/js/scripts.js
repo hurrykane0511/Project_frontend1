@@ -42,6 +42,8 @@ setInterval(() => {
         });
     }
 }, 0);
+
+
 const nav = document.querySelector('.navbar.d-none.d-lg-block');
 const logo = document.querySelector('.navbar-brand.ds img');
 const navitems= document.querySelectorAll('.navbar-nav.ds .nav-item .nav-link');
@@ -66,6 +68,8 @@ window.addEventListener("scroll", (event) => {
 });
 
 let mybutton = document.getElementById("myBtn");
+
+
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -148,16 +152,14 @@ window.addEventListener("keydown", function(e) {
 
 
 let setWidth = () =>{
-    slider[0].setAttribute('style','margin-left: 0px');
-    slider[slider.length-1].setAttribute('style','margin-right: 0px');
     if(window.screen.width > 992){
-        myCarousel.style.width = slider[0].offsetWidth*3 + 80 +'px';
+        myCarousel.style.width = slider[0].offsetWidth*3 + 120 +'px';
     }
     else if(window.screen.width > 600){
-        myCarousel.style.width = slider[0].offsetWidth*2 + 20 +'px';
+        myCarousel.style.width = slider[0].offsetWidth*2 + 80 +'px';
     }
-    else{
-        myCarousel.style.width = slider[0].offsetWidth+ +'px';
+    if(window.screen.width < 600){
+        myCarousel.style.width = slider[0].offsetWidth + 40 + 'px';
         slider[0].removeAttribute('style');
         slider[slider.length-1].removeAttribute('style');
     }
@@ -339,4 +341,14 @@ function isElementInViewport(el) {
     (rect.top >= 0 &&
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
+}
+const number = document.querySelectorAll('.opeqwe .a h4 h1');
+let arr = new Array;
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  }
+function saveNum() {
+    number.forEach(e => {
+        arr.push(e.textContent);
+    });
 }

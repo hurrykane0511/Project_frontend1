@@ -30,13 +30,13 @@ transform: none;
 transform: translate(-50%, -50%);
 }
 .scroll-on-up{
-    transition: all 1s linear;
+    transition: all 1s ease-out;
 }
 .scroll-on-left{
-    transition: all 2s linear;
+    transition: all 1s linear;
 }
 .scroll-on-right{
-    transition: all 2s linear;
+    transition: all 1s linear;
 }
 .tranUp{
     transform: translateY(10em);

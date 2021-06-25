@@ -708,6 +708,7 @@ form.last-form input{
     font-size: 20px !important;
 }
 form.last-form{
+    display: flex;
     max-width: 700px !important;
 }
 .last-form button[type='submit']{
@@ -858,14 +859,15 @@ footer .container-lg{
 }
 @media screen and (max-width: 600px) 
 {
-
+    form.last-form{
+        background-color: #61616100;
+        display: block;
+        max-width: 700px !important;
+    }
     .items-ct11{
         box-sizing: content-box;
         height: 378px;
         width: 330px !important;
-    }
-    .slider section{
-        scroll-snap-align: start;
     }
     a.play i{
         top: 10%;
