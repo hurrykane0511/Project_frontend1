@@ -193,18 +193,14 @@ const it13 = document.querySelectorAll('.slider-ct13 section');
 const btn13 = document.querySelectorAll('.contain button')
 const contain = document.querySelector('.content-13')
 let setwidth2 = () => {
-    it13[0].setAttribute('style','margin-left: 0px');
-    it13[it13.length-1].setAttribute('style','margin-right: 0px');
     if(window.screen.width > 992){
-        sliderct13.style.width = it13[0].offsetWidth*3 + 60 + 'px';
+        sliderct13.style.width = it13[0].offsetWidth*3 + 90 + 'px';
     }
     else if(window.screen.width > 600){
-        sliderct13.style.width = it13[0].offsetWidth*2 + 20 +'px';
+        sliderct13.style.width = it13[0].offsetWidth*2 + 60 +'px';
     }
     else{
-        sliderct13.style.width = it13[0].offsetWidth+ +'px';
-        it13[0].removeAttribute('style','margin-left: 0px');
-        it13[it13.length-1].removeAttribute('style','margin-right: 0px');
+        sliderct13.style.width = it13[0].offsetWidth + 30 +'px';
     }
 }
 
@@ -220,14 +216,14 @@ contain.addEventListener('mouseout',()=>{
 })
 btn13[0].onclick = () =>{
     sliderct13.scrollBy({
-        left: -200,
+        left: -10,
         behavior : "smooth"
     })
 }
 
 btn13[1].onclick = () =>{
     sliderct13.scrollBy({
-        left: 200,
+        left: 10,
         behavior : "smooth"
     })
 }
