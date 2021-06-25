@@ -1,9 +1,10 @@
 html{
     overflow-x: hidden;
-    box-sizing: content-box;
+   
 }
 body{
     max-width: 100%;
+    box-sizing: border-box;
 }
 #myBtn {
     position: fixed;
@@ -863,6 +864,10 @@ footer .container-lg{
         background-color: #61616100;
         display: block;
         max-width: 700px !important;
+        border: none !important;
+    }
+    form.last-form button{
+        margin-top: 20px;
     }
     .items-ct11{
         box-sizing: content-box;
