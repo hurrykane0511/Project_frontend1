@@ -190,8 +190,9 @@ btn11[1].onclick = () =>{
 
 const sliderct13 = document.querySelector('.slider-ct13');
 const it13 = document.querySelectorAll('.slider-ct13 section');
-const btn13 = document.querySelectorAll('.contain button')
-const contain = document.querySelector('.content-13')
+const btn13 = document.querySelectorAll('.contain button');
+const contain = document.querySelector('.content-13');
+
 let setwidth2 = () => {
     if(window.screen.width > 992){
         sliderct13.style.width = it13[0].offsetWidth*3 + 90 + 'px';
@@ -263,7 +264,6 @@ let scroll = window.requestAnimationFrame ||
              function(callback){ window.setTimeout(callback, 1000/60)};
 let elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 function loop() {
-
     Array.prototype.forEach.call(elementsToShow, function(element){
       if (isElementInViewport(element)) {
         element.classList.add('is-visible');
@@ -277,7 +277,6 @@ function loop() {
 loop()
 let tranUp = document.querySelectorAll('.scroll-on-up')
 function tranToUp() {
-
     Array.prototype.forEach.call(tranUp, function(element){
       if (isElementInViewport(element)) {
         element.classList.remove('tranUp');
@@ -286,14 +285,27 @@ function tranToUp() {
         element.classList.add('tranUp');
       }
     });
-
     scroll(tranToUp);
 }
+
 tranToUp();
+let tranDown = document.querySelectorAll('.scroll-on-down')
+function tranToDown() {
+    Array.prototype.forEach.call(tranDown, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.remove('tranDown');
+        sleep(1000);
+      } else {
+        element.classList.add('tranDown');
+      }
+    });
+
+    scroll(tranToDown);
+}
+tranToDown();
 
 let tranLeft = document.querySelectorAll('.scroll-on-left')
 function tranToLeft() {
-
     Array.prototype.forEach.call(tranLeft, function(element){
       if (isElementInViewport(element)) {
         element.classList.remove('tranLeft');
@@ -308,7 +320,6 @@ tranToLeft();
 
 let tranRight = document.querySelectorAll('.scroll-on-right')
 function tranToRight() {
-
     Array.prototype.forEach.call(tranRight, function(element){
       if (isElementInViewport(element)) {
         element.classList.remove('tranRight');
