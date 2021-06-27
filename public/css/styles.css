@@ -843,16 +843,19 @@ footer .container-lg{
     }
 }
 @media screen and (max-width: 600px) {
+    .btn-ct13{
+        transform: translateY(50px);
+    }
     .ct13-head{
-        display: block !important;
+        display: block;
     }
     .slider-ct13 section .img img{
         height: auto;
-        max-width: 300px !important;
+        max-width: 250px;
     }
     .left,.right{
-        height: 30px !important;
-        width: 30px !important;
+        height: 30px;
+        width: 30px;
     }
     .headasdasd{
         border: none !important;

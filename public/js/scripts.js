@@ -224,7 +224,7 @@ btn13[0].onclick = () =>{
 
 btn13[1].onclick = () =>{
     sliderct13.scrollBy({
-        left: 10,
+        left: 100,
         behavior : "smooth"
     })
 }
