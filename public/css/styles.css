@@ -300,6 +300,7 @@ a.play i{
     background: #fff;
     z-index: 20;
     transition: transform 0.5s linear;
+    border-bottom: #0c5adb 2px solid;
 }
 .profile:hover{
     transform: translateY(-10px);
