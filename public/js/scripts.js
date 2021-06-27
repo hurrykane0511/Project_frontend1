@@ -280,7 +280,6 @@ function tranToUp() {
     Array.prototype.forEach.call(tranUp, function(element){
       if (isElementInViewport(element)) {
         element.classList.remove('tranUp');
-        sleep(1000);
       } else {
         element.classList.add('tranUp');
       }
@@ -294,7 +293,6 @@ function tranToDown() {
     Array.prototype.forEach.call(tranDown, function(element){
       if (isElementInViewport(element)) {
         element.classList.remove('tranDown');
-        sleep(1000);
       } else {
         element.classList.add('tranDown');
       }
